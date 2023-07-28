@@ -1,0 +1,55 @@
+POST http://localhost:9090/route/createRoute
+Content-Type: application/json
+
+{
+    "origine": "Avenue Mohamed V",
+    "distination": "Jedeida"
+}
+###
+POST http://localhost:9090/test/runTest
+Content-Type: application/json
+
+###
+GET http://localhost:9090/route/get
+
+
+###
+POST https://user.live.boltsvc.net/rides/search/getRideOptions?version=CA.72.2&deviceId=d8b9d23d-9d69-41e1-a00f-3ca59d3d73ab&device_name=unknownAndroid%20SDK%20built%20for%20x86&device_os_version=11&channel=googleplay&deviceType=android&signup_session_id=3450b7dd22fdccedd5b8ab7a61ff503ad3ce1cd6378e7e09396711b479f23977&country=tn&language=en&user_id=39844542&session_id=39844542u1690377342130&distinct_id=client-39844542&rh_session_id=d8b9d23d-9d69-41e1-a00f-3ca59d3d73abu1690377317
+accept-encoding:gzip
+authorization:Basic KzIxNjUzMzQ0NTExOjZkZmRiZmRiLTZmNWMtNDk4Ni1iN2M2LTAxZTY5NTIyNGMyYw==
+connection:Keep-Alive
+content-length:318
+content-type:application/json; charset=UTF-8
+cookie:__cf_bm=7xExm.m0cSo6od19jP3Xa5qXXSUsZlzOoqdKln3jDdo-1690381819-0-Aa5/eSmmqK4z0/IpHDRZgwcu9ab9VOoaN0yNGECmIvR5ZhuH9hB0GLvMBDJ5M9RQ3XtP8d4jCcjiRZE1dR6emc0=
+host:user.live.boltsvc.net
+user-agent:okhttp/4.10.0
+
+{
+  "campaign_code": {
+    "ridehailing": "TNVCZ4HKVC6GMLM-1"
+  },
+  "destination_stops": [
+    {
+      "lat": 36.84,
+      "lng": 10.25
+    }
+  ],
+  "payment_method": {
+    "id": "cash",
+    "type": "default"
+  },
+  "pickup_stop": {
+    "address": "Tunis",
+    "lat": 36.81,
+    "lng": 10.11,
+    "place_id": "google|ChIJ8xtHMU7L4hIRmCGEzvtevGU"
+  },
+  "preliminary": false,
+  "timezone": "Europe/Paris"
+}
+
+###
+GET http://localhost:5000/30.42195459586142/-9.593340601326231/36.8515859/9.933083/sss
+content-type:application/json; charset=UTF-8
+
+
